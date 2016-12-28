@@ -26,7 +26,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private boolean isDragging;// 是否被拖拽
     private boolean isFoucusRight; // ScrollView是否滚动到右侧
     private View layout;
-    private int secondCount = 10800; // 倒计时3小时
+
 
 
     @Override
@@ -49,10 +49,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         mImgCover = (ImageView) layout.findViewById(R.id.img_cover);
         mImageView = (ImageView) layout.findViewById(R.id.img_indicator01);
-       /* mScrollView = (HorizontalScrollView) layout
-                .findViewById(R.id.layout_recom_banner);
-        mScrollView2 = (HorizontalScrollView) layout
-                .findViewById(R.id.layout_special_banner);*/
+
     }
 
    /* private void activeCategory() {
@@ -75,7 +72,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         MyPagerAdapter adapter = new MyPagerAdapter(fm);
         mPager.setAdapter(adapter);
         mPager.setCurrentItem(1000);
-        //mPager.setOnPageChangeListener(new MyPagerListener());
+        mPager.setOnPageChangeListener(new MyPagerListener());
     }
 
     /**
@@ -90,81 +87,18 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                     // 若用户没有拖拽，则自动滚动
                     mPager.setCurrentItem(mPager.getCurrentItem() + 1);
                 }
-               /* if (isFoucusRight) {
-                    mScrollView.fullScroll(ScrollView.FOCUS_LEFT);
-                } else {
-                    mScrollView.fullScroll(ScrollView.FOCUS_RIGHT);
-                }*/
+
                 isFoucusRight = !isFoucusRight;
                 mPager.postDelayed(this, 3000);
             }
         }, 3000);
-      /*  mScrollView2.postDelayed(new Runnable() {
-
-            @Override
-            public void run() {
-                if (isFoucusRight) {
-                    mScrollView2.fullScroll(ScrollView.FOCUS_RIGHT);
-                } else {
-                    mScrollView2.fullScroll(ScrollView.FOCUS_LEFT);
-                }
-                mScrollView2.postDelayed(this, 3000);
-            }
-        }, 4000);
-    }*/
 
 
 
 
 
-        class MyPagerListener implements ViewPager.OnPageChangeListener {
 
-            @Override
-            public void onPageScrolled(int position, float positionOffset,
-                                       int positionOffsetPixels) {
-            }
 
-            @Override
-            public void onPageSelected(int position) {
-                int width = mImgCover.getWidth();
-                LayoutParams layoutParams = (LayoutParams) mImageView
-                        .getLayoutParams();
-                int rightMargin = layoutParams.rightMargin;
-                int endPos = (width + rightMargin) * (position % 4);
-                int startPos = 0;
-                if (mLastPos < position) {
-                    // 图片向右移动
-                    startPos = (width + rightMargin) * (position % 4 - 1);
-                } else {
-                    // 图片向左移动
-                    startPos = (width + rightMargin) * (position % 4 + 1);
-                }
-                ObjectAnimator.ofFloat(mImgCover, "translationX", startPos, endPos)
-                        .setDuration(300).start();
-                mLastPos = position;
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-                switch (state) {
-                    case ViewPager.SCROLL_STATE_DRAGGING:
-                        // 用户拖拽
-                        isDragging = true;
-                        break;
-                    case ViewPager.SCROLL_STATE_IDLE:
-                        // 空闲状态
-                        isDragging = false;
-                        break;
-                    case ViewPager.SCROLL_STATE_SETTLING:
-                        // 被释放时
-                        isDragging = false;
-                        break;
-
-                    default:
-                        break;
-                }
-            }
-        }
 
 
  /*   @Override
@@ -241,5 +175,54 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             return 10000;
         }
 
+    }
+
+    private class MyPagerListener implements   ViewPager.OnPageChangeListener {
+
+        @Override
+        public void onPageScrolled(int position, float positionOffset,
+                                   int positionOffsetPixels) {
+        }
+
+        @Override
+        public void onPageSelected(int position) {
+            int width = mImgCover.getWidth();
+            LayoutParams layoutParams = (LayoutParams) mImageView
+                    .getLayoutParams();
+            int rightMargin = layoutParams.rightMargin;
+            int endPos = (width + rightMargin) * (position % 4);
+            int startPos = 0;
+            if (mLastPos < position) {
+                // 图片向右移动
+                startPos = (width + rightMargin) * (position % 4 - 1);
+            } else {
+                // 图片向左移动
+                startPos = (width + rightMargin) * (position % 4 + 1);
+            }
+            ObjectAnimator.ofFloat(mImgCover, "translationX", startPos, endPos)
+                    .setDuration(300).start();
+            mLastPos = position;
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int state) {
+            switch (state) {
+                case ViewPager.SCROLL_STATE_DRAGGING:
+                    // 用户拖拽
+                    isDragging = true;
+                    break;
+                case ViewPager.SCROLL_STATE_IDLE:
+                    // 空闲状态
+                    isDragging = false;
+                    break;
+                case ViewPager.SCROLL_STATE_SETTLING:
+                    // 被释放时
+                    isDragging = false;
+                    break;
+
+                default:
+                    break;
+            }
+        }
     }
 }
