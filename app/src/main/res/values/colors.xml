@@ -6,7 +6,7 @@
     <color name="white">#ffffff</color>
     <color name="bg_color">#f1f1f1</color>
     <!-- 灰色 -->
-    <color name="grey">#808080</color>
+    <color name="gray">#808080</color>
     <color name="black">#000</color>
     <!--立即注册-->
     <color name="color_theme">#32cd32</color>
@@ -18,4 +18,10 @@
     <color name="android_layout_bg">#f2f3f5</color>
     <!-- topbar背景色 -->
     <color name="bg_topbar">#fbfbfb</color>
+
+
+
+    <color name="hintColor">#d7d7d7</color>
+    <color name="pressBarBg">#f2f2f2</color>
+    <color name="lightBg">#fefefe</color>
 </resources>

@@ -44,16 +44,18 @@
                 android:background="@drawable/my_personal_not_login_bg"
                 android:gravity="center" >
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal" >
+                    android:gravity="center_horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true">
 
                     <ImageView
                         android:id="@+id/tv_login"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_gravity="center"
                        android:src="@drawable/person_no_login"
                      />
 
@@ -66,17 +68,17 @@
                         android:background="@drawable/my_personal_click_login"
                         android:gravity="center"
                         android:text="@string/personal_login"
-                        android:textColor="@color/login_button"
+                        android:textColor="@color/black"
                         android:textSize="@dimen/small_text_size"
                         android:textStyle="bold" />
-                </RelativeLayout>
+                </LinearLayout>
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/layout_logined"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:background="@drawable/personel_user_head_bg"
+
                 android:visibility="gone" >
 
                 <ImageView
@@ -86,9 +88,9 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/login_user_icon_bg_new"
+
                     android:padding="3dp"
-                    android:src="@drawable/login_dog" />
+                    android:src="@drawable/login_logo" />
 
                 <TextView
                     android:id="@+id/tv_uid"
@@ -101,7 +103,7 @@
                     android:singleLine="true"
                     android:text="jd_78116bbcaattsd"
                     android:textColor="@color/white"
-                    android:textSize="14sp" />
+                    android:textSize="@dimen/small_text_size" />
 
                 <TextView
                     android:id="@+id/tv_level"
@@ -111,7 +113,7 @@
                     android:layout_centerVertical="true"
                     android:text="铜牌用户"
                     android:textColor="@color/white"
-                    android:textSize="14sp" />
+                    android:textSize="@dimen/small_text_size" />
             </RelativeLayout>
 
             <LinearLayout
@@ -139,9 +141,9 @@
                         android:layout_weight="1.0"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="全部订单"
+                        android:text="个人信息"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/small_text_size" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -161,7 +163,7 @@
                         android:layout_marginLeft="20.0dip"
                         android:layout_marginRight="15.0dip"
                         android:scaleType="fitXY"
-                        android:src="@drawable/android_my_jd_wallet" />
+                        android:src="@drawable/android_my_wallet" />
 
                     <TextView
                         android:layout_width="0.0dip"
@@ -169,7 +171,7 @@
                         android:layout_weight="1.0"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="我的钱包"
+                        android:text="我的账号"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -181,7 +183,7 @@
                         android:paddingLeft="8.0dip"
                         android:paddingRight="8.0dip"
                         android:paddingTop="2.0dip"
-                        android:text="优惠券、余额、白条等"
+                        android:text="余额"
                         android:textColor="@color/gray"
                         android:textSize="14sp" />
 
@@ -210,7 +212,7 @@
                         android:layout_marginLeft="20.0dip"
                         android:layout_marginRight="15.0dip"
                         android:scaleType="fitXY"
-                        android:src="@drawable/android_my_jd_collects" />
+                        android:src="@drawable/android_my_collects" />
 
                     <TextView
                         android:layout_width="0.0dip"
@@ -220,7 +222,7 @@
                         android:singleLine="true"
                         android:text="我的关注"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/small_text_size" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -240,7 +242,7 @@
                         android:layout_marginLeft="20.0dip"
                         android:layout_marginRight="15.0dip"
                         android:scaleType="fitXY"
-                        android:src="@drawable/android_my_jd_messages" />
+                        android:src="@drawable/android_my_messages" />
 
                     <TextView
                         android:layout_width="0.0dip"
@@ -248,9 +250,9 @@
                         android:layout_weight="1.0"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="我的消息"
+                        android:text="我的评价"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/small_text_size" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -270,7 +272,7 @@
                         android:layout_marginLeft="20.0dip"
                         android:layout_marginRight="15.0dip"
                         android:scaleType="fitXY"
-                        android:src="@drawable/android_my_jd_appoint" />
+                        android:src="@drawable/android_my_appoint" />
 
                     <TextView
                         android:layout_width="0.0dip"
@@ -278,9 +280,9 @@
                         android:layout_weight="1.0"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="我的预约"
+                        android:text="我的投诉"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/small_text_size" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -307,7 +309,7 @@
                         android:layout_marginLeft="20.0dip"
                         android:layout_marginRight="15.0dip"
                         android:scaleType="fitXY"
-                        android:src="@drawable/android_my_jd_history" />
+                        android:src="@drawable/android_my_history" />
 
                     <TextView
                         android:layout_width="0.0dip"
@@ -317,7 +319,7 @@
                         android:singleLine="true"
                         android:text="浏览记录"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/small_text_size" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -337,7 +339,7 @@
                         android:layout_marginLeft="20.0dip"
                         android:layout_marginRight="15.0dip"
                         android:scaleType="fitXY"
-                        android:src="@drawable/android_my_jd_discuss" />
+                        android:src="@drawable/android_my_discuss" />
 
                     <TextView
                         android:layout_width="0.0dip"
@@ -347,7 +349,7 @@
                         android:singleLine="true"
                         android:text="评价商品"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/small_text_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -359,7 +361,7 @@
                         android:paddingTop="2.0dip"
                         android:text="评价赢京豆"
                         android:textColor="@color/gray"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/small_text_size" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -386,7 +388,7 @@
                         android:layout_marginLeft="20.0dip"
                         android:layout_marginRight="15.0dip"
                         android:scaleType="fitXY"
-                        android:src="@drawable/android_my_jd_account_center" />
+                        android:src="@drawable/android_my_account_center" />
 
                     <TextView
                         android:layout_width="0.0dip"
@@ -394,7 +396,7 @@
                         android:layout_weight="1.0"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="账户与安全"
+                        android:text="设置与帮助"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -428,7 +430,7 @@
                         android:layout_marginLeft="20.0dip"
                         android:layout_marginRight="15.0dip"
                         android:scaleType="fitXY"
-                        android:src="@drawable/android_my_jd_service_manager" />
+                        android:src="@drawable/android_my_service_manager" />
 
                     <TextView
                         android:layout_width="0.0dip"
@@ -450,7 +452,7 @@
                         android:paddingTop="2.0dip"
                         android:text="返修退换货等"
                         android:textColor="@color/gray"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/micro_text_size" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -480,7 +482,7 @@
                         android:singleLine="true"
                         android:text="意见反馈"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/small_text_size" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -508,7 +510,7 @@
                         android:layout_marginLeft="20.0dip"
                         android:layout_marginRight="15.0dip"
                         android:scaleType="fitXY"
-                        android:src="@drawable/android_my_jd_history" />
+                        android:src="@drawable/android_my_history" />
 
                     <TextView
                         android:layout_width="0.0dip"
