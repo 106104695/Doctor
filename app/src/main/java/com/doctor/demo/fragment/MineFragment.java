@@ -30,7 +30,8 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     private void setOnListener() {
 
             layout.findViewById(R.id.layout_userinfo).setOnClickListener(this);
-
+        layout.findViewById(R.id.personal_login_button).setOnClickListener(this);
+        layout.findViewById(R.id.layout_more).setOnClickListener(this);
 
     }
 
