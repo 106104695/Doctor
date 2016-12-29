@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.doctor.demo.widget.TopToolbar
+   <!-- <com.doctor.demo.widget.TopToolbar
         android:id="@id/toolbar"
         android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
@@ -15,7 +15,7 @@
         app:isShowSearchView="true"
 
 
-        />
+        />-->
 
 
 

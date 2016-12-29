@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/android_layout_bg"
-    tools:context=".MainActivity" >
+    android:background="@color/android_layout_bg">
 
 
 
@@ -50,7 +49,7 @@
                         android:background="@drawable/my_personal_click_login"
                         android:gravity="center"
                         android:text="@string/personal_login"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="@dimen/small_text_size"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -105,7 +104,7 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/layout_mine_order"
+                    android:id="@+id/layout_userinfo"
                     style="@style/MineItemStyle"
                     android:background="@drawable/bg_item_top" >
 
@@ -360,7 +359,7 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/layout_mine_account_center"
+                    android:id="@+id/layout_more"
                     style="@style/MineItemStyle"
                     android:background="@drawable/bg_item_top" >
 

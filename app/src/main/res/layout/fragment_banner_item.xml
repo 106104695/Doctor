@@ -12,6 +12,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:scaleType="fitXY"
-        android:src="@drawable/img_home_banner1" />
+        android:src="@drawable/img_home_banner2" />
 
 </RelativeLayout>

@@ -9,7 +9,7 @@
         android:id="@+id/title_relativelayout"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@color/color_theme">
+        android:background="@color/white">
 
         <TextView
             android:id="@+id/top_title_text"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="8dp"
             android:background="@drawable/topbar_code_search" />
 
         <EditText
@@ -46,7 +46,7 @@
             android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="8dp"
 
             android:layout_toLeftOf="@id/mainactivity_title_position_map"
             android:layout_toRightOf="@id/top_title_city_spinner"
