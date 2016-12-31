@@ -4,9 +4,6 @@
     android:layout_height= "match_parent"
     android:background="@color/white"
     >
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,44 +28,78 @@
             android:background="@drawable/shape_bg"
             android:orientation="vertical" >
 
-            <com.doctor.demo.view.EditTextWithDel
-                android:id="@+id/accounts"
+            <EditText
+                android:id="@+id/etAccount"
                 android:layout_width="fill_parent"
                 android:layout_height="45.0dp"
                 android:background="@color/transparent"
-                android:drawableLeft="@drawable/icon_login_head"
-                android:drawablePadding="25dip"
-
+                android:drawableLeft="@drawable/login_icon_account"
+                android:drawablePadding="20dip"
                 android:hint="请输入用户名"
                 android:paddingLeft="15dip"
                 android:shadowDx="0.0"
                 android:shadowDy="1.0"
                 android:shadowRadius="1.0"
-                android:textColorHint="@color/gray"
-                android:textSize="@dimen/small_text_size" />
+                android:textSize="@dimen/small_text_size"
+                android:textColorHint="@color/gray" />
 
             <View
-                android:layout_width="fill_parent"
-                android:layout_height="1.0px"
-                android:layout_marginLeft="1.0px"
-                android:layout_marginRight="1.0px"
-                android:background="#ffc0c3c4" />
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/base_horization_line" />
 
-            <com.doctor.demo.view.EditTextWithDel
-                android:id="@+id/password"
+            <EditText
+                android:id="@+id/etPassWord"
                 android:layout_width="fill_parent"
-                android:layout_height="45.0dip"
+                android:layout_height="45.0dp"
                 android:background="@color/transparent"
-                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/login_icon_password"
+                android:textSize="@dimen/small_text_size"
                 android:hint="请输入密码"
                 android:inputType="textPassword"
-                android:maxLength="8"
-                android:maxLines="1"
-                android:paddingLeft="15.0dip"
-                android:textColor="#ff1d1d1d"
-                android:textColorHint="@color/gray"
-                android:layout_marginRight="2dp"
-                android:textSize="@dimen/small_text_size" />
+                android:drawablePadding="20dip"
+                android:paddingLeft="15dip"
+                android:textColorHint="@color/gray" />
+
+            <!--     <com.doctor.demo.view.EditTextWithDel
+                     android:id="@+id/accounts"
+                     android:layout_width="fill_parent"
+                     android:layout_height="45.0dp"
+                     android:background="@color/transparent"
+
+                     android:drawablePadding="25dip"
+                     android:drawableLeft="@drawable/login_icon_account"
+                     android:hint="请输入用户名"
+                     android:paddingLeft="25dip"
+                     android:shadowDx="0.0"
+                     android:shadowDy="1.0"
+                     android:shadowRadius="1.0"
+                     android:textColorHint="@color/gray"
+                     android:textSize="@dimen/small_text_size" />
+
+                 <View
+                     android:layout_width="fill_parent"
+                     android:layout_height="1.0px"
+                     android:layout_marginLeft="1.0px"
+                     android:layout_marginRight="1.0px"
+                     android:background="#ffc0c3c4" />
+
+                 <com.doctor.demo.view.EditTextWithDel
+                     android:id="@+id/password"
+                     android:layout_width="fill_parent"
+                     android:layout_height="45.0dip"
+                     android:background="@color/transparent"
+                     android:gravity="center_vertical"
+                     android:hint="请输入密码"
+                     android:inputType="textPassword"
+                     android:drawableLeft="@drawable/login_icon_password"
+
+                     android:maxLines="1"
+                     android:paddingLeft="25.0dip"
+                     android:textColor="#ff1d1d1d"
+                     android:textColorHint="@color/gray"
+                     android:layout_marginRight="2dp"
+                     android:textSize="@dimen/small_text_size" />-->
         </LinearLayout>
 
         <Button

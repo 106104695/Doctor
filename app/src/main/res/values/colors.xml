@@ -19,7 +19,7 @@
     <!-- topbar背景色 -->
     <color name="bg_topbar">#fbfbfb</color>
 
-
+    <color name="dark">#4f4f4f</color>
 
     <color name="hintColor">#d7d7d7</color>
     <color name="pressBarBg">#f2f2f2</color>
