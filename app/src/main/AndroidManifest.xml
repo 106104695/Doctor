@@ -25,7 +25,8 @@
         <activity android:name=".UserInfoActivity" />
         <activity android:name=".MoreActivity" />
         <activity android:name=".MyEvaluateActivity" />
-        <activity android:name=".EvaluateDetailActivity"/>
+        <activity android:name=".EvaluateDetailActivity" />
+        <activity android:name=".MyDoctorsActivity"></activity>
     </application>
 
 </manifest>

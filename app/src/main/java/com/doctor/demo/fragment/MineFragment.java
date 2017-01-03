@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.doctor.demo.LoginActivity;
 import com.doctor.demo.MoreActivity;
+import com.doctor.demo.MyDoctorsActivity;
 import com.doctor.demo.MyEvaluateActivity;
 import com.doctor.demo.R;
 import com.doctor.demo.UserInfoActivity;
@@ -53,6 +54,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
             case R.id.layout_mine_complaint: // 我的投诉
                 startActivity(new Intent(getActivity(), MyEvaluateActivity.class));
                 break;
+            case R.id.layout_mine_doctors: // 我的医生
+                startActivity(new Intent(getActivity(), MyDoctorsActivity.class));
+                break;
             case R.id.layout_more: // 更多
 
                 startActivity(new Intent(getActivity(), MoreActivity.class));
@@ -67,9 +71,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), PurseActivity.class));
                 break;
 
-            case R.id.layout_mine_complaint: // 我的关注
-                startActivity(new Intent(getActivity(), FavorActivity.class));
-                break;
+
             case R.id.layout_mine_history: // 浏览记录
                 startActivity(new Intent(getActivity(), HistoryActivity.class));
                 break;

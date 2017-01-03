@@ -183,7 +183,7 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/layout_mine_collects"
+                    android:id="@+id/layout_mine_doctors"
                     style="@style/MineItemStyle"
                     android:background="@drawable/bg_item_top" >
 
