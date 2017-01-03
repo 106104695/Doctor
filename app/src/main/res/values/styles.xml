@@ -47,4 +47,11 @@
         <item name="android:textOff"></item>
         <item name="android:background">@drawable/btn_open</item>
     </style>
+    <style name="user_face_image">
+        <item name="android:layout_width">30.0dip</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">1.0dip</item>
+        <item name="android:clickable">true</item>
+    </style>
 </resources>

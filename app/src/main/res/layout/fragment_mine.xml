@@ -201,7 +201,7 @@
                         android:layout_weight="1.0"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="我的关注"
+                        android:text="我的医生"
                         android:textColor="@color/black"
                         android:textSize="@dimen/small_text_size" />
 
@@ -213,7 +213,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/layout_mine_messages"
+                    android:id="@+id/layout_mine_evaluate"
                     style="@style/MineItemStyle"
                     android:background="@drawable/bg_item_center" >
 
