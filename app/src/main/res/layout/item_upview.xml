@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:text="热议"
             android:textSize="9sp"
-            android:padding="3dp"
+            android:padding="2dp"
             android:background="@drawable/textview_border"
             android:layout_marginRight="6dp"
             android:textColor="#32cd32" />
@@ -27,14 +27,15 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/title_tv1"
             android:ellipsize="end"
-            android:textSize="14sp"
+            android:textSize="@dimen/micro_text_size"
+            android:textColor="@color/black"
             android:maxLines="1" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rl2"
         android:layout_width="match_parent"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="3dp"
         android:layout_height="wrap_content">
 
         <TextView
@@ -42,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="热评"
-            android:padding="3dp"
+            android:padding="2dp"
             android:textSize="9sp"
             android:background="@drawable/textview_border"
             android:layout_marginRight="6dp"
@@ -54,7 +55,8 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/title_tv2"
             android:ellipsize="end"
-            android:textSize="14sp"
+            android:textSize="@dimen/micro_text_size"
+            android:textColor="@color/black"
             android:maxLines="1" />
     </RelativeLayout>
 

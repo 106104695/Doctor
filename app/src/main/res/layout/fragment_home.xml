@@ -70,13 +70,15 @@
 
 <ScrollView android:layout_height="wrap_content"
     android:layout_width="wrap_content"
-    android:layout_below="@+id/title_relativelayout">
+    android:layout_below="@+id/title_relativelayout"
+    >
     <LinearLayout
         android:id="@+id/LinearLayout1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_below="@+id/title_relativelayout">
+        android:layout_below="@+id/title_relativelayout"
+        >
         <include
             layout="@layout/items_home_top_menu" />
         <include
@@ -88,6 +90,9 @@
 
         <include
             layout="@layout/items_home_upview" />
+        <include
+            layout="@layout/items_home_special" />
+
     </LinearLayout>
     </ScrollView>
 </RelativeLayout>
