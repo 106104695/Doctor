@@ -34,6 +34,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         layout.findViewById(R.id.personal_login_button).setOnClickListener(this);
         layout.findViewById(R.id.layout_more).setOnClickListener(this);
         layout.findViewById(R.id.layout_mine_evaluate).setOnClickListener(this);
+        layout.findViewById(R.id.layout_mine_complaint).setOnClickListener(this);
     }
 
 
@@ -47,6 +48,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), UserInfoActivity.class));
                 break;
             case R.id.layout_mine_evaluate: // 我的评价
+                startActivity(new Intent(getActivity(), MyEvaluateActivity.class));
+                break;
+            case R.id.layout_mine_complaint: // 我的投诉
                 startActivity(new Intent(getActivity(), MyEvaluateActivity.class));
                 break;
             case R.id.layout_more: // 更多
@@ -63,7 +67,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), PurseActivity.class));
                 break;
 
-            case R.id.layout_mine_collects: // 我的关注
+            case R.id.layout_mine_complaint: // 我的关注
                 startActivity(new Intent(getActivity(), FavorActivity.class));
                 break;
             case R.id.layout_mine_history: // 浏览记录
